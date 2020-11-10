@@ -60,7 +60,7 @@ app.post("/adminlogin",(req,res,next)=> {
             var password = result[0].admin_code
 
             if(password == admin_code){
-                res.json('You Are In');
+                res.end(JSON.stringify(result));
             }else{
                 res.json('Password inncorrect');
             }
