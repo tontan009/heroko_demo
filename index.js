@@ -8,10 +8,10 @@ const PORT = process.env.PORT || 8080
 
 //Connect to MySQL
 var con = mysql.createConnection({
-    host:'sql12.freemysqlhosting.net',
-    user:'sql12374220',
-    password:'uFazZlPQlF',
-    database:'sql12374220'
+    host:'localhost',
+    user:'root',
+    password:'',
+    database:'testvote'
 });
 
 //Create Restful
